@@ -1,0 +1,61 @@
+2018-07-15 18:20:47.199  INFO 3903 --- [           main]            GamebootApplication : Starting GamebootApplication on 192.168.0.3 with PID 3903 (/Users/zhangyang/DEV/gitRepo/gameboot/target/classes started by zhangyang in /Users/zhangyang/DEV/gitRepo/gameboot)
+2018-07-15 18:20:47.206  INFO 3903 --- [           main]            GamebootApplication : No active profile set, falling back to default profiles: default
+2018-07-15 18:20:47.305  INFO 3903 --- [           main] letWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3382f8ae: startup date [Sun Jul 15 18:20:47 CST 2018]; root of context hierarchy
+2018-07-15 18:20:48.265  INFO 3903 --- [           main] epositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-15 18:20:48.787  INFO 3903 --- [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee2b5cf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-15 18:20:49.318  INFO 3903 --- [           main]                TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2018-07-15 18:20:49.339  INFO 3903 --- [           main]              Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-15 18:20:49.351  INFO 3903 --- [           main]                StandardService : Starting service [Tomcat]
+2018-07-15 18:20:49.352  INFO 3903 --- [           main]                 StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-15 18:20:49.357  INFO 3903 --- [ost-startStop-1]           AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhangyang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-07-15 18:20:49.465  INFO 3903 --- [ost-startStop-1]                    [/gameboot] : Initializing Spring embedded WebApplicationContext
+2018-07-15 18:20:49.465  INFO 3903 --- [ost-startStop-1]                  ContextLoader : Root WebApplicationContext: initialization completed in 2206 ms
+2018-07-15 18:20:49.614  INFO 3903 --- [ost-startStop-1]        ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-07-15 18:20:49.622  INFO 3903 --- [ost-startStop-1]         FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-15 18:20:49.622  INFO 3903 --- [ost-startStop-1]         FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-15 18:20:49.622  INFO 3903 --- [ost-startStop-1]         FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-15 18:20:49.622  INFO 3903 --- [ost-startStop-1]         FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-15 18:20:50.556  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/test/testGet],methods=[GET]}" onto public java.util.List<com.gp.dao.model.GpPubgMatchData> com.gp.controller.TestController.testGet(java.lang.String)
+2018-07-15 18:20:50.557  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/test/testInsert],methods=[POST]}" onto public int com.gp.controller.TestController.testInsert(com.gp.dao.model.GpPubgMatchData)
+2018-07-15 18:20:50.558  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-07-15 18:20:50.560  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-15 18:20:50.561  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-15 18:20:50.561  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-15 18:20:50.563  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-15 18:20:50.564  INFO 3903 --- [           main]   RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-15 18:20:50.762  INFO 3903 --- [           main]        SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 18:20:51.006  INFO 3903 --- [           main]   RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3382f8ae: startup date [Sun Jul 15 18:20:47 CST 2018]; root of context hierarchy
+2018-07-15 18:20:51.070  INFO 3903 --- [           main]        SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 18:20:51.070  INFO 3903 --- [           main]        SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-15 18:20:51.919  INFO 3903 --- [           main]        AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-07-15 18:20:51.921  INFO 3903 --- [           main]        AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-15 18:20:51.926  INFO 3903 --- [           main]        AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-15 18:20:51.931  INFO 3903 --- [           main]      DefaultLifecycleProcessor : Starting beans in phase 2147483647
+2018-07-15 18:20:51.931  INFO 3903 --- [           main] cumentationPluginsBootstrapper : Context refreshed
+2018-07-15 18:20:51.961  INFO 3903 --- [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-07-15 18:20:51.977  INFO 3903 --- [           main]     ApiListingReferenceScanner : Scanning for api listing references
+2018-07-15 18:20:52.203  INFO 3903 --- [           main]              Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2018-07-15 18:20:52.228  INFO 3903 --- [           main]                NioSelectorPool : Using a shared selector for servlet write/read
+2018-07-15 18:20:52.246  INFO 3903 --- [           main]                TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '/gameboot'
+2018-07-15 18:20:52.252  INFO 3903 --- [           main]            GamebootApplication : Started GamebootApplication in 5.548 seconds (JVM running for 6.961)
+2018-07-15 18:21:08.311  INFO 3903 --- [nio-8080-exec-1]                    [/gameboot] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-15 18:21:08.311  INFO 3903 --- [nio-8080-exec-1]              DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-15 18:21:08.337  INFO 3903 --- [nio-8080-exec-1]              DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-07-15 18:21:08.454  INFO 3903 --- [nio-8080-exec-1]                   WebLogAspect : URL : http://localhost:8080/gameboot/test/testInsert
+2018-07-15 18:21:08.455  INFO 3903 --- [nio-8080-exec-1]                   WebLogAspect : HTTP_METHOD : POST
+2018-07-15 18:21:08.455  INFO 3903 --- [nio-8080-exec-1]                   WebLogAspect : IP : 0:0:0:0:0:0:0:1
+2018-07-15 18:21:08.538  INFO 3903 --- [nio-8080-exec-1]                   WebLogAspect : requestBody:[{"creator":"zy","endTime":1531648699373,"gmtCreate":1531648699373,"gmtModified":1531648699373,"id":0,"isDeleted":"n","matchData":"data1","matchId":0,"modifier":"string","participants":"string","startTime":1531648699373}]
+2018-07-15 18:21:08.602  INFO 3903 --- [nio-8080-exec-1]               HikariDataSource : sleepDB - Starting...
+2018-07-15 18:21:08.888  INFO 3903 --- [nio-8080-exec-1]               HikariDataSource : sleepDB - Start completed.
+2018-07-15 18:21:08.926  INFO 3903 --- [nio-8080-exec-1]                   WebLogAspect : response : 1
+2018-07-15 18:21:14.005  INFO 3903 --- [nio-8080-exec-2]                   WebLogAspect : URL : http://localhost:8080/gameboot/test/testGet
+2018-07-15 18:21:14.006  INFO 3903 --- [nio-8080-exec-2]                   WebLogAspect : HTTP_METHOD : GET
+2018-07-15 18:21:14.006  INFO 3903 --- [nio-8080-exec-2]                   WebLogAspect : IP : 0:0:0:0:0:0:0:1
+2018-07-15 18:21:14.006  INFO 3903 --- [nio-8080-exec-2]                   WebLogAspect : requestParams:{{name:creater,value:zy}}
+2018-07-15 18:21:14.052  INFO 3903 --- [nio-8080-exec-2]                   WebLogAspect : response : [{"creator":"zy","id":1,"matchData":"data"},{"creator":"zy","id":2,"matchData":"data"},{"creator":"zy","endTime":1531648699000,"gmtCreate":1531648699000,"gmtModified":1531648699000,"id":3,"isDeleted":"n","matchData":"data1","matchId":0,"modifier":"string","participants":"string","startTime":1531648699000},{"creator":"zy","endTime":1531648699000,"gmtCreate":1531648699000,"gmtModified":1531648699000,"id":4,"isDeleted":"n","matchData":"data1","matchId":0,"modifier":"string","participants":"string","startTime":1531648699000},{"creator":"zy","endTime":1531648699000,"gmtCreate":1531648699000,"gmtModified":1531648699000,"id":5,"isDeleted":"n","matchData":"data1","matchId":0,"modifier":"string","participants":"string","startTime":1531648699000}]
+2018-07-15 18:24:12.107  INFO 3903 --- [      Thread-15] letWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3382f8ae: startup date [Sun Jul 15 18:20:47 CST 2018]; root of context hierarchy
+2018-07-15 18:24:12.114  INFO 3903 --- [      Thread-15]      DefaultLifecycleProcessor : Stopping beans in phase 2147483647
+2018-07-15 18:24:12.139  INFO 3903 --- [      Thread-15]        AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-07-15 18:24:12.140  INFO 3903 --- [      Thread-15]        AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-07-15 18:24:12.142  INFO 3903 --- [      Thread-15]               HikariDataSource : sleepDB - Shutdown initiated...
+2018-07-15 18:24:12.147  INFO 3903 --- [      Thread-15]               HikariDataSource : sleepDB - Shutdown completed.

@@ -1,0 +1,71 @@
+package com.gp.bo.impl;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
+import org.springframework.util.CollectionUtils;
+
+import com.gp.dao.mapper.${name}MapperExt;
+import com.gp.dao.model.${name};
+import com.gp.dao.model.${name}Example;
+import com.gp.bo.${name}Bo;
+
+@Service("${caseName}Bo")
+public class ${name}BoImpl implements ${name}Bo {
+
+    @Autowired
+    private ${name}MapperExt ${caseName}MapperExt;
+
+    @Override
+    public int insert(${name} record) {
+        return ${caseName}MapperExt.insertSelective(record);
+    }
+
+    @Override
+    public int updateById(${name} record) {
+        validate(record);
+        return ${caseName}MapperExt.updateByPrimaryKeySelective(record);
+    }
+
+    @Override
+    public int logicDeleteById(${name} record) {
+        validate(record);
+        return ${caseName}MapperExt.deleteByPrimaryKey(record);
+    }
+
+    @Override
+    public int deleteById(Long id) {
+        return ${caseName}MapperExt.deleteById(id);
+    }
+
+
+    @Override
+    public ${name} queryById(Long id) {
+        return ${caseName}MapperExt.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<${name}> queryByExample(${name}Example example) {
+        return ${caseName}MapperExt.selectByExample(example);
+    }
+
+    @Override
+    public Long countByExample(${name}Example example) {
+        return ${caseName}MapperExt.countByExample(example);
+    }
+
+    @Override
+    public ${name} queryOneByExample(${name}Example example) {
+        List<${name}> list = queryByExample(example);
+        if (CollectionUtils.isEmpty(list)) {
+            return null;
+        }
+        return list.get(0);
+    }
+
+    private void validate(${name} record) {
+        Assert.notNull(record, "record is null");
+        Assert.notNull(record.getId(), "id is null");
+    }
+
+}

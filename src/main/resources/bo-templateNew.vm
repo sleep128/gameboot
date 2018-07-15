@@ -1,0 +1,7 @@
+package com.gp.bo;
+import com.gp.dao.model.${name};
+import com.gp.dao.model.${name}Example;
+
+public interface ${name}Bo extends BaseBoNew<${name}, ${name}Example> {
+
+}

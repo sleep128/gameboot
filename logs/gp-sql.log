@@ -1,0 +1,6 @@
+2018-07-15 18:21:08.896 DEBUG 3903 --- [nio-8080-exec-1]                insertSelective : ==>  Preparing: insert into gp_pubg_match_data ( IS_DELETED, GMT_CREATE, CREATOR, GMT_MODIFIED, MODIFIER, match_id, match_data, participants, start_time, end_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-07-15 18:21:08.918 DEBUG 3903 --- [nio-8080-exec-1]                insertSelective : ==> Parameters: n(String), 2018-07-15 17:58:19.373(Timestamp), zy(String), 2018-07-15 17:58:19.373(Timestamp), string(String), 0(Long), data1(String), string(String), 2018-07-15 17:58:19.373(Timestamp), 2018-07-15 17:58:19.373(Timestamp)
+2018-07-15 18:21:08.920 DEBUG 3903 --- [nio-8080-exec-1]                insertSelective : <==    Updates: 1
+2018-07-15 18:21:14.036 DEBUG 3903 --- [nio-8080-exec-2]                selectByExample : ==>  Preparing: select ID, IS_DELETED, GMT_CREATE, CREATOR, GMT_MODIFIED, MODIFIER, match_id, match_data, participants, start_time, end_time from gp_pubg_match_data where 1 = 1 and ( ( CREATOR = ? ) ) 
+2018-07-15 18:21:14.037 DEBUG 3903 --- [nio-8080-exec-2]                selectByExample : ==> Parameters: zy(String)
+2018-07-15 18:21:14.050 DEBUG 3903 --- [nio-8080-exec-2]                selectByExample : <==      Total: 5

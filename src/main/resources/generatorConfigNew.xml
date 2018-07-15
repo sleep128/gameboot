@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- mysql-connector的位置 -->
+    <classPathEntry location="/Users/zhangyang/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar" />
+
+    <!-- 配置一个代码生成操作，如果生成的目录或是数据库不一样，只需要参考增加一个context节点即可 -->
+    <context id="gameProGeneratorConfig" targetRuntime="MyBatis3">
+
+        <property name="useActualColumnNames" value="false" />
+
+        <!-- 配置插件 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin">
+            <property name="useToStringFromRoot" value="true" />
+        </plugin>
+
+        <plugin type="com.gp.common.plugin.MysqlPaginationPluginNew" />
+
+        <commentGenerator>
+            <property name="suppressAllComments" value="false" />
+            <property name="suppressDate" value="true" />
+        </commentGenerator>
+
+        <!-- 配置数据库连接 -->
+        <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/sleepDB?userUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false"
+            driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 配置model生成位置 -->
+        <javaModelGenerator targetPackage="com.gp.dao.model" targetProject="/Users/zhangyang/DEV/gitRepo/gameboot/src/main/java">
+            <property name="rootClass" value="com.gp.dao.model.BaseModel" />
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 配置sqlmap生成位置 -->
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="/Users/zhangyang/DEV/gitRepo/gameboot/src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- 配置mapper接口生成位置 -->
+        <javaClientGenerator targetPackage="com.gp.dao.mapper" targetProject="/Users/zhangyang/DEV/gitRepo/gameboot/src/main/java"
+            type="XMLMAPPER">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        
+        
+        <table schema="public" tableName="gp_pubg_match_data" enableCountByExample="true" enableUpdateByExample="false"
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="ID" sqlStatement="JDBC" identity="true" />
+        </table>
+
+        <table schema="public" tableName="gp_pubg_player" enableCountByExample="true" enableUpdateByExample="false"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="ID" sqlStatement="JDBC" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>
