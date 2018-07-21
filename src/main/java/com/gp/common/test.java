@@ -6,4 +6,8 @@ package com.gp.common;
  * @create: 2018/7/14
  **/
 public class test {
+
+    public static void main(String[] args) {
+
+    }
 }

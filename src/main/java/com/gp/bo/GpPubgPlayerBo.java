@@ -4,4 +4,6 @@ import com.gp.dao.model.GpPubgPlayerExample;
 
 public interface GpPubgPlayerBo extends BaseBoNew<GpPubgPlayer, GpPubgPlayerExample> {
 
+    void testTranzaction();
+
 }

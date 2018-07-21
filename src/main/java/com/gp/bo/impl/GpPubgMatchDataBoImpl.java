@@ -2,6 +2,7 @@ package com.gp.bo.impl;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
@@ -11,6 +12,7 @@ import com.gp.dao.model.GpPubgMatchDataExample;
 import com.gp.bo.GpPubgMatchDataBo;
 
 @Service("pubgMatchDataBo")
+@Transactional
 public class GpPubgMatchDataBoImpl implements GpPubgMatchDataBo {
 
     @Autowired
