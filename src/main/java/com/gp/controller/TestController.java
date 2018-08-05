@@ -46,7 +46,7 @@ public class TestController {
 
     @ApiOperation(value = "插入玩家信息", notes = "根据创建人查询")
     @RequestMapping(value = "/insertPlayer", method = RequestMethod.POST)
-    public int insertPlayer(@RequestBody GpPubgPlayer gpPubgPlayer) {
+    public Integer insertPlayer(@RequestBody GpPubgPlayer gpPubgPlayer) {
         int insert = pubgPlayerBo.insert(gpPubgPlayer);
         return insert;
     }
